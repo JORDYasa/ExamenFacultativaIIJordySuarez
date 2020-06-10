@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        android:background="@color/Fondo">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imagecurso"
+            android:src="@drawable/book"/>
+
+        <EditText
+            android:layout_width="270dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_nombrec"
+            android:hint="Nombre del curso"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:layout_width="270dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_descripcion"
+            android:hint="Descripción"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/editText_nombrec"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_costo"
+            android:hint="Costo del curso"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/editText_descripcion"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_canthoras"
+            android:hint="Cantidad de horas"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/editText_costo"/>
+
+        <EditText
+            android:layout_width="270dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_requisitos"
+            android:hint="Requisitos minimos"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/editText_canthoras"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editText_requisitos"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/azu"
+                android:textStyle="bold"
+                android:text="Agregar"/>
+
+            <Button
+                android:id="@+id/btncancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:text="Cancelar"
+                android:background="@color/grey"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

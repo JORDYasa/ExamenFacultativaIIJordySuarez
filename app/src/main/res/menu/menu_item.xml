@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btndelete"
+        android:title="Eliminar"/>
+
+    <item
+        android:id="@+id/btnadd"
+        android:title="Agregar"/>
+
+    <item
+        android:id="@+id/btncancel"
+        android:title="Salir"/>
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/fondoitem"
+        tools:ignore="MissingConstraints"
+        android:outlineAmbientShadowColor="@color/azu">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imagecurso"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombrec"
+            android:text="Nombre del curso"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descripcion"
+            android:text="Descripción"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/nombrec"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/costo"
+            android:text="Costo del curso"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/descripcion"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/canthoras"
+            android:text="Cantidad de horas"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/costo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/requisitos"
+            android:text="Requisitos minimos"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/imagecurso"
+            android:layout_toEndOf="@id/imagecurso"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/canthoras"/>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
